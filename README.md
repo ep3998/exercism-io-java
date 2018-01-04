@@ -1,0 +1,1 @@
+This repository will track my solutions and ongoing changes to them to the Java exercises which can be found at [Exercism.io](http://exercism.io)
