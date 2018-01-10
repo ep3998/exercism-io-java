@@ -2,17 +2,18 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 class Gigasecond {
-
+	private LocalDateTime birthDate;
+	private long offset = 1000000000;
+	
     Gigasecond(LocalDate birthDate) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    	this.birthDate = birthDate.atTime(0,0);
     }
 
     Gigasecond(LocalDateTime birthDateTime) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.birthDate = birthDateTime;
     }
 
     LocalDateTime getDate() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    	return this.birthDate.plusSeconds(offset);
     }
-
 }
